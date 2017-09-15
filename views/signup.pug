@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  div.container
+    div: form(method='POST', action='signup')
+
+        if error
+          div.alert.alert-danger #{error}
+
+        div.form-group
+          label First Name:
+          input.form-control(name='firstName', value=email, type='text' autofocus)
+
+        div.form-group
+          label Last Name:
+          input.form-control(name='lastName', value=email, type='text' autofocus)
+
+        div.form-group
+          label Email:
+          input.form-control(name='email', value=email, type='email' autofocus)
+
+        div.form-group
+          label Email (Re-enter):
+          input.form-control(name='emailConfirmation', value=emailConfirmation, type='email')
+
+        div.form-group
+          label Password:
+          input.form-control(name='password', type='password')
+
+        div.form-group
+          label Password (Re-enter):
+          input.form-control(name='passwordConfirmation', type='password')
+
+        div.form-actions
+          input.btn.btn-primary(type='submit', value='Sign Up')

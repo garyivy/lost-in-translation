@@ -1,0 +1,24 @@
+{
+  "name": "lost-in-translation",
+  "version": "1.0.0",
+  "description": "Translation of a Translation leads to Grapevine Effect",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Gary Ivy",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "google-translate": "^2.0.5",
+    "mongoose": "^4.11.11",
+    "pug": "^2.0.0-rc.3"
+  }
+}

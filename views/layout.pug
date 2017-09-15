@@ -1,0 +1,18 @@
+html(lang='en')
+    head
+        block head
+            meta(charset='utf-8')
+            title Lost in Translation - #{title}
+            link(rel='shortcut icon', href='static/favicon.ico')
+            link(href='static/bootstrap.min.css', rel='stylesheet')
+            block scripts
+                script(src='static/jquery.min.js')            
+                script(src='static/bootstrap.min.js')
+            block css
+    body
+        include partials/header
+        main
+            div.container(style='margin-top: 10px')
+                h1 #{title}
+                block content
+        include partials/footer
